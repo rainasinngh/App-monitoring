@@ -1,0 +1,11 @@
+---
+
+- name: server-setup
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+   - name: server-setup
+     import_role:
+       name: server-setup
